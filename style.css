@@ -95,6 +95,13 @@ html {
   .main-div .card {
     width: 70%;
     height: 23%;
+    padding: 20px;
+  }
+  .main-div .card h1 {
+    font-size: 12px;
+  }
+  .main-div .card p {
+    font-size: 10px;
   }
   .cir1 {
     width: 90px;
