@@ -15,42 +15,42 @@ html {
 
 .cir {
     display: flex;
+    // z-index: -100;
 
     .circle {
         position: absolute;
 
         border-radius: 50%;
-        // opacity: 0.7;
     }
 
     .cir1 {
         width: 110px;
         height: 110px;
-        background-color: greenyellow;
-        bottom: 10%;
+        bottom: 15%;
         left: 27%;
-        filter: blur(3px);
-        overflow: hidden;
-
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     }
 
     .cir2 {
         width: 120px;
         height: 120px;
-        background-color: rgb(151, 35, 239);
-        top: 12%;
-        right: 28%;
-        filter: blur(3px);
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+        top: 27%;
+        right: 26%;
     }
 
     .cir3 {
         width: 75px;
         height: 75px;
-        background-color: rgb(13, 140, 225);
-        top: 16%;
-        left: 35%;
-        filter: blur(3px);
 
+        background-color: #F4D03F;
+        background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+
+        top: 18%;
+        left: 35%;
     }
 }
 
@@ -67,17 +67,10 @@ html {
     .card {
         height: 47%;
         width: 35%;
-        background: linear-gradient(to bottom right, rgba(186, 186, 186, 0.678), rgba(43, 43, 43, 0.767));
+        background-image: linear-gradient(135deg,rgba(154, 154, 154, 0.304), rgba(0, 0, 0, 0.564));
+        backdrop-filter: blur(10px);
         padding: 30px;
-        opacity: 0.5;
         border-radius: 20px;
-
-
-
-        backdrop-filter: blur(15px);
-        // -webkit-backdrop-filter: blur(15px);
-
-        // z-index: 10;
         border: 1.5px solid rgba(255, 255, 255, 0.466);
         display: flex;
         flex-direction: column;
@@ -92,7 +85,6 @@ html {
             text-transform: uppercase;
             color: rgba(239, 236, 236, 0.769);
             letter-spacing: 1px;
-            // text-shadow: 0.5px 0.5px 0.5px rgb(255, 255, 255);
         }
 
         p {
@@ -113,51 +105,83 @@ html {
     }
 }
 
+// @media screen and (max-width: 768px) {
+//     .main-div {
+//         .card {
+//             width: auto;
+//             height: 23%;
+//             padding: 20px;
+
+//             h1 {
+//                 font-size: auto;
+//             }
+
+//             p {
+//                 font-size: auto;
+//             }
+//         }
+
+
+//     }
+
+//     .cir1 {
+//         width: 90px;
+//         height: 90px;
+//         top: 58%;
+//         transform: translateX(-100%);
+//     }
+
+//     .cir2 {
+//         width: 70px;
+//         height: 70px;
+//         left: 70%;
+//         transform: translateY(230%);
+//     }
+
+//     .cir3 {
+//         width: 90px;
+//         height: 90px;
+//         top: 80%;
+//         transform: translateY(210%);
+//     }
+// }
+
+
 @media screen and (max-width: 768px) {
-    .main-div {
-        .card {
-            width: 70%;
-            height: 23%;
-            padding: 20px;
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
 
-            h1 {
-                font-size: 12px;
-            }
+    .visiting h1 {
+        font-size: 1.2rem;
+    }
 
-            p {
-                font-size: 10px;
-            }
-        }
+    .name h1 {
+        font-size: 1rem;
+    }
 
-
+    .name p, .date p {
+        font-size: 0.8rem;
     }
 
     .cir1 {
-        width: 90px;
-        height: 90px;
-        top: 58%;
-        transform: translateX(-100%);
+        width: 80px;
+        height: 80px;
+        left: 10%;
     }
 
     .cir2 {
-        width: 70px;
-        height: 70px;
-
-        // top: 58%;
-        left: 70%;
-        // transform: translateX(100%);
-        transform: translateY(230%);
+        width: 90px;
+        height: 90px;
+        right: 10%;
     }
 
     .cir3 {
-        width: 90px;
-        height: 90px;
-        // top: 58%;
-        top: 80%;
-        // transform: translateX(120%);
-        transform: translateY(210%);
+        width: 60px;
+        height: 60px;
+        left: 30%;
     }
-
-
-
 }
+
+
